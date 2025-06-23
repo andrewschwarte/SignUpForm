@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "NorseBold";
+  src: url("../assets/Norse-Bold.otf") format("opentype");
+}
 body {
   display: flex;
   height: 100vh;
@@ -7,15 +11,41 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.left-container {
-  height: 100%;
-
-  width: 40%;
+.image-container {
+  position: relative;
+  width: 500px; /* adjust as needed */
 }
 
-img {
-  height: 100%;
+.background {
   width: 100%;
+  display: block;
+}
+
+.overlay-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: rgba(255, 255, 255, 0.5); /* optional */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.overlay-img {
+  width: 50px; /* or whatever size you want */
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 16px;
+  color: rgb(23, 23, 135);
+  opacity: 1;
+  font-family: "NorseBold";
 }
 
 .right-container {
@@ -60,6 +90,24 @@ img {
   display: flex;
   gap: 1rem; /* space between columns */
   margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.password {
+  border: 2px solid;
+}
+
+.password:invalid {
+  border-color: red;
+}
+
+.password:valid {
+  border-color: green;
 }
 
 /*---------solution below-------------------

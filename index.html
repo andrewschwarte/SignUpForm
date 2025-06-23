@@ -13,12 +13,18 @@
     <title>Sign Up Form</title>
   </head>
   <body>
-    <div class="left-container">
+    <div class="image-container">
       <img
         src="assets/willian-justen-de-vasconcellos-cObqVf6DnDg-unsplash.jpg"
-        alt="mountain"
+        class="background"
       />
+
+      <!-- <div class="overlay-group">
+        <p class="overlay-text">ODIN</p>
+        <img src="assets/odin-lined.png" class="overlay-img" />
+      </div> -->
     </div>
+
     <div class="right-container">
       <div class="top">
         <h1 class="h1s">
@@ -30,7 +36,42 @@
       </div>
       <div class="form-section">
         <h2>Lets Do This!</h2>
+        <form action="">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="">FIRST NAME</label>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <label for="">LAST NAME</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="">EMAIL</label>
+              <input type="email" />
+            </div>
+            <div class="form-group">
+              <label for="">PHONE NUMBER</label>
+              <input type="number" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="">PASSWORD</label>
+              <input class="password" type="password" required />
+            </div>
+            <div class="form-group">
+              <label for="">CONFIRM PASSWORD</label>
+              <input class="password" type="password" required />
+            </div>
+          </div>
+        </form>
       </div>
+
       <div class="bottom">
         <button class="btn">Create Account</button>
 
