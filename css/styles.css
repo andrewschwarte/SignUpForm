@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(216, 227, 237);
+  font-family: "Montserrat", sans-serif;
+}
+
+.left-container {
+  height: 100%;
+
+  width: 40%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.right-container {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top,
+.form-section,
+.bottom {
+  width: 100%;
+  padding: 2em;
+  flex: 1;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: smaller;
+
+  color: rgb(34, 95, 150);
+}
+
+.form-section {
+  background-color: aliceblue;
+  font-size: smaller;
+  color: rgb(34, 95, 150);
+}
+
+.btn {
+  padding: 16px;
+  color: white;
+  background-color: rgb(23, 23, 135);
+  border-radius: 10px;
+  border: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem; /* space between columns */
+  margin-bottom: 1rem;
+}
+
+/*---------solution below-------------------
+
+/* 
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5em;
+  box-sizing: border-box;
+} */
